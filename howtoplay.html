@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>Mastermind</title>
+</head>
+<body>
+   <header>
+       <h1>Mastermind</h1>
+    </header>
+    <main>
+        <div class="about clearfix">    
+            <h2>What is Mastermind?</h2>
+            
+            <p><em>Mastermind</em> or <em>Master Mind</em> is a code-breaking game for two players. The modern game with pegs was invented in 1970 by Mordecai Meirowitz, an Israeli postmaster and telecommunications expert. It resembles an earlier pencil and paper game called Bulls and Cows that may date back a century or more.</p>
+            
+            <p id="attribution">From Wikipedia, the free encyclopedia</p>
+       </div>
+       <div class="rules">
+           <h2>How to Play</h2>
+           <p>In this Javascript take on Mastermind, a randomly generated 4 digit master code is created when the player hits 'Start Game'. Using the now revealed Text Inputs and Submit button, place <em>one</em> number from 0 to 9 into each Text Input, then hit Submit. The submitted code is then compared to the master code, revealing how many numbers the player guessed are in the code, but in the wrong position, and how many numbers the player guessed that are not only in the master code, but are also in the correct position. The player is not informed of which numbers in their code meet these criteria, only that these numbers exist. Using this information, the player must modify their code until it perfectly matches the master code or they run out of tries. Speaking of tries, the original game gave players 10 tries to crack the Mastermind's code when there was 1296 possible patterns. This version of the game provides the player with 50 tries to crack one of 10000 combinations.</p>
+       </div> 
+    </main>
+</body>

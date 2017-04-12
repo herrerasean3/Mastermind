@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>Mastermind</title>
+</head>
+<body>
+   <header>
+       <h1>Mastermind</h1>
+       
+       <a id="howtoplay" class="button" href="howtoplay.html" target="_blank">How to Play</a>
+    </header>
+   
+    <main>
+     <span id="returnNumberInCode"></span>
+     <span id="returnCorrect"></span>
+      <input id="number1" type="text" name="number1" placeholder="Number" required>
+      <input id="number2" type="text" name="number2" placeholder="Number" required>
+      <input id="number3" type="text" name="number3" placeholder="Number" required>
+      <input id="number4" type="text" name="number4" placeholder="Number" required>
+       
+        <div id="buttons">
+           <button id="startgame">Start Game</button>
+           <button id="submitcode">Submit Code</button>
+           <button id="restartgame" class="">Restart Game</button>
+        </div>
+   </main>
+    
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
