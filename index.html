@@ -14,21 +14,31 @@
     </header>
    
     <main>
-     <span id="returnNumberInCode"></span>
-     <span id="returnCorrect"></span>
-      <input id="number1" type="text" name="number1" placeholder="Number" required>
-      <input id="number2" type="text" name="number2" placeholder="Number" required>
-      <input id="number3" type="text" name="number3" placeholder="Number" required>
-      <input id="number4" type="text" name="number4" placeholder="Number" required>
+     
+     <h2 id="winorlose"></h2>
+     <h2 id="codereveal"></h2>
+     
+      <input id="number1" class="hidden" type="text" name="number1" placeholder="Number" required>
+      <input id="number2" class="hidden" type="text" name="number2" placeholder="Number" required>
+      <input id="number3" class="hidden" type="text" name="number3" placeholder="Number" required>
+      <input id="number4" class="hidden" type="text" name="number4" placeholder="Number" required>
        
         <div id="buttons">
            <button id="startgame">Start Game</button>
-           <button id="submitcode">Submit Code</button>
-           <button id="restartgame" class="">Restart Game</button>
+           <button id="submitcode" class="hidden">Submit Code</button>
+           <button id="restartgame" class="hidden">Restart Game</button>
         </div>
+        <h2 id="triesremaining"></h2>
+        <h2 id="returnNumberInCode"></h2>
+     <h2 id="returnCorrect"></h2>
    </main>
     
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/number.js"></script>
+    <script src="js/code.js"></script>
     <script src="js/game.js"></script>
+    <audio autoplay loop>
+        <source src="audio/Heartbeat-Drone2.mp3" type="audio/mpeg">
+    </audio>
 </body>
 </html>
