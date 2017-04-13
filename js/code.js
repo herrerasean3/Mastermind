@@ -16,8 +16,7 @@ Sets indexes 0 through 3 of masterCode.code to randomly generated numbers rangin
 */
     constructor(){
         this.code = [];
-        this.checked = null;
-        this.cheat = []
+        this.cheat = [];
         for (var i = 0; i < 4; i++){
             this.code[i] = getRandomIntInclusive(0, 9);
             this.cheat[i] = this.code[i];
