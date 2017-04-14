@@ -71,6 +71,11 @@ button:focus {
     outline: #FFAA00;
 }
 
+img {
+    margin: 10px auto;
+    width: 200px;
+}
+
 a.button {
     margin: 0 auto;
     padding: 5px;
@@ -102,4 +107,13 @@ a.button:hover {
   content: "";
   display: table;
   clear: both;
+}
+
+.rotate {
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
 }

@@ -62,7 +62,8 @@ class Game {
         show(Tries);
         
     }
-    
+
+//Resets the variables associated with checking before actually running the check. This is to avoid out of bounds numbers or the .checked bolean not resetting and making the .inCode value impossible to update.
     resetbeforeGuessing(){
         for (var i = 0; i < 4; i++) {
             this.masterCode.code[i].checked = false;
@@ -70,6 +71,31 @@ class Game {
         
         this.inCode = 0;
         this.matches = 0;
+    }
+    
+//This is a method for reporting matches, to make the reported text more grammatically correct.
+    
+    reportMatches(){
+        if (this.matches == 0){
+        correct.text(`There are no matches with the master code.`);}
+        
+        else if(this.matches == 1){
+        correct.text(`There is ${this.matches} match with the master code.`);}
+        
+        else if (this.matches > 1){
+        correct.text(`There are ${this.matches} matches with the master code.`);}
+    }
+    
+//This is a method for reporting incorrectly positioned numbers. Like the one above it, its purpose is to make the report more grammatically correct.    
+        reportinCode(){
+        if (this.inCode == 0){
+        numberInCode.text(`Your code has no incorrectly placed numbers.`);}
+        
+        else if(this.inCode == 1){
+        numberInCode.text(`Your code has ${this.inCode} incorrectly placed number.`);}
+        
+        else if (this.inCode > 1){
+        numberInCode.text(`Your code has ${this.inCode} incorrectly placed numbers.`);}
     }
 
 //Runs through the code, first checking how many copies of a number are in the code. Currently checks all instances of a given number, then ignores any repeats until this.checked is reset. As a result, the one number will reveal all like numbers.
@@ -85,6 +111,14 @@ class Game {
                 }
             };
         }
+    }
+    
+//Clears the text of the player inputs game restart.
+    clearInputs(){
+        number1.val('');
+        number2.val('');
+        number3.val('');
+        number4.val('');
     }
     
     submit(){
@@ -130,8 +164,10 @@ Very rough logic to prevent users from inputting less than the required number o
                 this.matches = this.matches + 1;
                 this.inCode = this.inCode - 1;
             }
-            numberInCode.text(`You found ${this.inCode} numbers in the master code, but positioned incorrectly.`);
-            correct.text(`There are ${this.matches} matches with the master code.`);
+            
+            this.reportMatches();
+            this.reportinCode();
+            
             
 //Checks if the player got a perfect match before checking if their tries ran out. This gives a player a chance to win on their very last chance. In an earlier iteration of the code, this was actually placed before the code was even submitted, meaning it would test your previously submitted code on whether it was a winner or not.
             if(this.matches === 4){
@@ -167,6 +203,7 @@ Very rough logic to prevent users from inputting less than the required number o
         hide(winorLose);
         hide(codeReveal);
         this.startGame();
+        this.clearInputs();
     }
 }
 
@@ -176,6 +213,7 @@ $(document).ready(function(){
     startButton.on('click', function(){
     
         game.startGame();
+        $('.rotate').addClass('hidden')
 });
     
     submitButton.on('click', function(){

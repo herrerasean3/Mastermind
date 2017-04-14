@@ -11,9 +11,8 @@ function getRandomIntInclusive(min, max) {
 
 class Code{
 
-/*
-Sets indexes 0 through 3 of masterCode.code to randomly generated numbers ranging from 0 to 9. It then converts each index into a Number class using number.js
-*/
+
+//Sets indexes 0 through 3 of masterCode.code to randomly generated numbers ranging from 0 to 9. It then converts each index into a Number class using number.js
     constructor(){
         this.code = [];
         this.cheat = [];
@@ -22,10 +21,6 @@ Sets indexes 0 through 3 of masterCode.code to randomly generated numbers rangin
             this.cheat[i] = this.code[i];
             this.code[i] = new Number(this.code[i]);
         }
-    }
-    
-    compare(){
-        
     }
     
 }
