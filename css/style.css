@@ -64,6 +64,7 @@ button {
     border: 1px solid #FFAA00;
     background-color: #100000;
     color: #FFAA00;
+    outline: #FFAA00;
 }
 
 button:focus {
