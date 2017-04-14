@@ -161,6 +161,7 @@ Very rough logic to prevent users from inputting less than the required number o
         }
     }
     
+//Hides win/lose text, code reveal, and restart button before running startGame(). Basically
     restart(){
         hide(restartButton);
         hide(winorLose);
