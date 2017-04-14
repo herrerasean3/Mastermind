@@ -8,7 +8,7 @@ Winning | 2 Hours | 2 Hours, 40 Minutes | 100% | 2 Hours, 10 Minutes
 Reset Game | 1 Hour | 20 Minutes | 100% | 20 Minutes
 
 Resources that were helpful on this project:
-* [Get the galue in an input text box](http://stackoverflow.com/questions/4088467/get-the-value-in-an-input-text-box)
+* [Get the value in an input text box](http://stackoverflow.com/questions/4088467/get-the-value-in-an-input-text-box)
 * [Getting a random integer between two values, inclusive](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#Getting_a_random_integer_between_two_values_inclusive)
 * [Removing the blue glow from an HTML text input when selected](http://stackoverflow.com/questions/9287803/removing-the-blue-glow-from-an-html-text-input-when-selected)
 
