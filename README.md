@@ -4,7 +4,7 @@ Component | Estimated Time | Invested Time | % Complete | Actual Time
 --- | --- |--- |--- |---
 Game Initialization | 3 Hours | 10 Minutes | 100% | 10 Minutes 
 Playable Game | 8 Hours | 7 Hours | 100% | 7 Hours
-Winning | 2 Hours | 2 Hours, 40 Minutes | 100% | 2 Hours, 10 Minutes
+Winning | 2 Hours | 2 Hours, 40 Minutes | 100% | 2 Hours, 40 Minutes
 Reset Game | 1 Hour | 20 Minutes | 100% | 20 Minutes
 
 Resources that were helpful on this project:
