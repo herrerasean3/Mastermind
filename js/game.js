@@ -48,7 +48,7 @@ class Game {
         this.masterCode = []
         this.masterCode = new Code
 
-        this.tries = 50;
+        this.tries = 25;
         
         console.log(`Starting new game. If you want to cheat, enter game.masterCode.cheat into the console`);
         
@@ -88,6 +88,8 @@ class Game {
     }
     
     submit(){
+        show(numberInCode);
+        show(correct);
         
 /*
 Very rough logic to prevent users from inputting less than the required number of inputs. 
@@ -128,7 +130,7 @@ Very rough logic to prevent users from inputting less than the required number o
                 this.matches = this.matches + 1;
                 this.inCode = this.inCode - 1;
             }
-            numberInCode.text(`There are ${this.inCode} numbers in the master code, but positioned incorrectly.`);
+            numberInCode.text(`You found ${this.inCode} numbers in the master code, but positioned incorrectly.`);
             correct.text(`There are ${this.matches} matches with the master code.`);
             
 //Checks if the player got a perfect match before checking if their tries ran out. This gives a player a chance to win on their very last chance. In an earlier iteration of the code, this was actually placed before the code was even submitted, meaning it would test your previously submitted code on whether it was a winner or not.
@@ -140,7 +142,10 @@ Very rough logic to prevent users from inputting less than the required number o
                 show(restartButton);
                 hide(inputBoxes);
                 hide(submitButton);
-                hide(Tries);}
+                hide(Tries);
+                hide(numberInCode);
+                hide(correct);
+            }
             else if (this.tries === 0) {
                 winorLose.text("You Lose");
                 codeReveal.text(`The code was ${this.masterCode.code[0].value} ${this.masterCode.code[1].value} ${this.masterCode.code[2].value} ${this.masterCode.code[3].value}`);
@@ -150,6 +155,8 @@ Very rough logic to prevent users from inputting less than the required number o
                 hide(inputBoxes);
                 hide(submitButton);
                 hide(Tries);
+                hide(numberInCode);
+                hide(correct);
             }
         }
     }

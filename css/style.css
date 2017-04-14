@@ -27,10 +27,16 @@ main h2 {
     text-align: center;
 }
 
+.inputContainer {
+    margin: 0 auto;
+    text-align: center;
+}
+
 input {
+    margin: 0 auto;
     text-align: center;
     display: inline-block;
-    width: 22%;
+    width: 20%;
     height: 100px;
     font-size: 30px;
     border: 1px solid #FFAA00;
@@ -58,6 +64,10 @@ button {
     border: 1px solid #FFAA00;
     background-color: #100000;
     color: #FFAA00;
+}
+
+button:focus {
+    outline: #FFAA00;
 }
 
 a.button {
