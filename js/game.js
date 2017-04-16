@@ -48,7 +48,7 @@ class Game {
         this.masterCode = []
         this.masterCode = new Code
 
-        this.tries = 25;
+        this.tries = 20;
         
         console.log(`Starting new game. If you want to cheat, enter game.masterCode.cheat into the console`);
         

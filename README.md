@@ -19,7 +19,7 @@ Below details my Minimum Viable Product.
 
 Mastermind is a code breaking logic game in which one player is the Mastermind and the other is the Codebreaker. Using a sequence of four colors, from a pool of six colors, in which there may be multiples of a given color, the Mastermind creates their hidden code. The Codebreaker then attempts to solve the Mastermind's code in 10 attempts. Solving the code entails the Codebreaker submitting a four color code, and the Mastermind responding by informing the Codebreaker of how many colors in the attempt were in code but in the wrong position, and how many colors were in the correct position. The Codebreaker is not informed of which colors, or which position in the sequence. Using this information, the Codebreaker must adjust their codes until they either solve the Mastermind's code or run out of tries.
 
-In this particular variation of Mastermind, the code is a randomly generated sequence of numbers, from 0000 to 9999, presenting the player with 10000 possible codes. In order to reflect the massive hike from the original board game's 1296 possible patterns, a player has 50 attempts over the traditional 10.
+In this particular variation of Mastermind, the code is a randomly generated sequence of numbers, from 0000 to 9999, presenting the player with 10000 possible codes. In order to reflect the massive hike from the original board game's 1296 possible patterns, a player has 20 attempts over the traditional 10.
 
 ### Landing Page: 
 
