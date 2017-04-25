@@ -12,6 +12,13 @@ Resources that were helpful on this project:
 * [Getting a random integer between two values, inclusive](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#Getting_a_random_integer_between_two_values_inclusive)
 * [Removing the blue glow from an HTML text input when selected](http://stackoverflow.com/questions/9287803/removing-the-blue-glow-from-an-html-text-input-when-selected)
 
+## Technologies Used:
+HTML
+CSS
+JavaScript
+JQuery
+GIMP
+
 
 Below details my Minimum Viable Product.
 
